@@ -39,3 +39,6 @@ def find_distribution(amount: int, numbers: list):
     tuples = product(*rows)
     amounts = map(sum, tuples)
     return Counter(amounts)[amount]
+
+print(find_distribution(7, [1, 2, 3]) )
+
